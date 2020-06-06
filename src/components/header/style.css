@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Baloo+Da&display=swap');
+
+h1, h2, h3 {
+	font-family: 'Baloo Da', cursive;
+	font-weight: 300;
+}
+
+h1, h2 {
+	margin-left: 10%;
+}
+
+h1 {
+	color: rgb(255, 51, 153);
+	font-size: 70px;
+}
+
+h2 {
+	color: white;
+	font-size: 60px;
+}
+
+h3 {
+	color: white;
+	font-size: 50px;
+	text-align: center;
+}
+
+.rosquinha {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rosquinha {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rosquinha {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
