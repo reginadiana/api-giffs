@@ -1,4 +1,4 @@
-## :octocat: What is App
+# :octocat: What is App
 
 The goal was to create an application where the user would type something in the input and view gifs related to what was written.
 
@@ -9,6 +9,12 @@ The goal was to create an application where the user would type something in the
 :heavy_check_mark: Responsive Layout
 
 :heavy_check_mark: Show gifs based on the balue typed in the input 
+
+## Deploy
+
+You can access the application at https://allgifs.netlify.app/
+
+:warning: The API resquest don't worry in production envolviment, just local envolvement :sorry: 
 
 ### :iphone: Layout 
 
@@ -25,7 +31,7 @@ The goal was to create an application where the user would type something in the
 Clone this project:
 
 ```
-git clone https://github.com/Diana-ops/womakerscodeReact/tree/master/api-giff
+git clone https://github.com/reginadiana/api-giffs
 ```
 
 Install dependeces and run with:
@@ -36,7 +42,25 @@ $ yarn install
 $ yarn start
 ```
 
-Is possible to see the response of local request acessing http://localhost:3000
+## Running with docker 
+
+Container build
+
+```
+$ docker-compose build
+```
+
+Running application
+```
+$ docker-compose up
+```
+
+Open docker terminal
+```
+$ docker-compose run --rm --service-ports web bash  
+```
+
+Is possible to see the response of local request acessing http://localhost:3001
 
 If you can and wanted give me some **feedback** about my project or README.md, send me a **Pull Requests**. Advices are many welcome and constructive for me :smile:
 
