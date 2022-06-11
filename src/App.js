@@ -20,7 +20,7 @@ class App extends Component {
 
 	/*O valor passado por props de SearchBar é usado aqui*/
 	handleTermChange(term) {
-		const url = `http://api.giphy.com/v1/gifs/search?q=${term.replace(/\s/g,'+')}&api_key=1YIx5yclZNTG6Ghrm95crUchAdaNwTxl`
+		const url = `https://api.giphy.com/v1/gifs/search?q=${term.replace(/\s/g,'+')}&api_key=1YIx5yclZNTG6Ghrm95crUchAdaNwTxl`
 
 		request.get(url, (err, res) => {
 			this.setState({ gifs: res.body.data })
