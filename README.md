@@ -57,7 +57,7 @@ $ docker-compose up
 
 Open docker terminal
 ```
-$ docker-compose run --rm --service-ports web bash  
+$ docker-compose run --rm --service-ports app bash  
 ```
 
 Is possible to see the response of local request acessing http://localhost:3001
