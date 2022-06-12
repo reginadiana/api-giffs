@@ -2,6 +2,8 @@
 
 The goal was to create an application where the user would type something in the input and view gifs related to what was written.
 
+Baseado em: https://giphy.com/
+
 ## Functionalities
 
 :heavy_check_mark: API consumption
