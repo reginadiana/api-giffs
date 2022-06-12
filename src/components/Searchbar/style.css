@@ -1,0 +1,10 @@
+.search__bar {
+  padding: 16px 8px;
+  background-color: #2e8049;
+}
+
+@media only screen and (min-width: 800px) {
+  .search__bar {
+    padding: 32px;
+  }
+}

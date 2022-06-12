@@ -1,0 +1,11 @@
+.gif__item {
+  padding-bottom: 1rem;
+}
+
+.gif__item:hover {
+  cursor: pointer;
+}
+
+.gif__item img {
+  width: 100%;
+}

@@ -1,44 +1,34 @@
-import React, { Component } from 'react';
-import './style.css';
+import React, { useState, useEffect } from "react";
+import SearchBar from "./components/Searchbar/index";
+import GifList from "./components/Gif/List/index";
+import Header from "./components/Header/index";
 
-/*Components*/
-import SearchBar from './components/searchbar/index'
-import GifList  from './components/giflist/index'
-import Header from './components/header/index'
+/* Lib para fazer chamadas API */
+import request from "superagent";
 
-/*Lib para fazer chamadas API*/
-import request from 'superagent'
+const App = () => {
+  const [gifs, setGifs] = useState([]);
 
-class App extends Component {
-	constructor(){
-		super();
+  useEffect(() => {
+    requestGifs("cake");
+  }, [])
 
-		this.state = {
-			gifs: [ ]
-		}
-	};
+  const requestGifs = (term) => {
+	const path = 'https://api.giphy.com';
+	const key = '1YIx5yclZNTG6Ghrm95crUchAdaNwTxl';
+    const url = `${path}/v1/gifs/search?q=${term}&api_key=${key}`;
+    request.get(url, (err, res) => setGifs(res.body.data));
+  };
 
-	/*O valor passado por props de SearchBar é usado aqui*/
-	handleTermChange(term) {
-		const url = `https://api.giphy.com/v1/gifs/search?q=${term.replace(/\s/g,'+')}&api_key=1YIx5yclZNTG6Ghrm95crUchAdaNwTxl`
-
-		request.get(url, (err, res) => {
-			this.setState({ gifs: res.body.data })
-		});
-	}
-	render(){
-		return(
-			<>
-			<Header/>
-				<div className="greeting">
-					< SearchBar onTermChange={term => this.handleTermChange(term)}/>
-					<GifList gifs={this.state.gifs}/>
-				</div>
-			</>
-		);
-	}
-}
-
-
+  return (
+    <>
+      <Header />
+      <div className="greeting">
+        <SearchBar onChangeSearch={requestGifs} />
+        <GifList gifs={gifs} />
+      </div>
+    </>
+  );
+};
 
 export default App;

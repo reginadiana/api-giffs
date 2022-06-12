@@ -1,0 +1,45 @@
+header {
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px 0;
+}
+
+.highlight {
+  color: rgb(255, 51, 153);
+}
+
+h1 {
+  color: palevioletred;
+  font-size: 10vw;
+}
+
+h2 {
+  color: white;
+  font-size: 10vw;
+}
+
+.dunout {
+  display: flex;
+}
+
+.dunout {
+  height: 40vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dunout {
+    animation: rotateDunout infinite 20s linear;
+  }
+}
+
+@keyframes rotateDunout {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
