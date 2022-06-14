@@ -1,69 +1,61 @@
-# :octocat: What is App
+# :octocat: GIFS GIPHY - Pesquisador de imagens animadas 
 
-The goal was to create an application where the user would type something in the input and view gifs related to what was written.
+O gerenciador é uma aplicação em frontend para pesquisa e renderização de imagens animadas baseado no site [giphy](https://giphy.com/)
 
-Baseado em: https://giphy.com/
+## Entregas
 
-## Functionalities
+:heavy_check_mark: Consumo da API do _giphy_ de acordo com a pesquisa. 
 
-:heavy_check_mark: API consumption
+:heavy_check_mark: Layout responsivo.
 
-:heavy_check_mark: Responsive Layout
+:heavy_check_mark: Renderização das imagens.
 
-:heavy_check_mark: Show gifs based on the balue typed in the input 
+:heavy_check_mark: Animação 360graus.
 
-## Deploy
+## :iphone: Aplicação 
 
-You can access the application at https://allgifs.netlify.app/
+![image](https://user-images.githubusercontent.com/46378210/173581217-ec5c04bf-4dfa-41ac-8dcb-9f551086d7fa.png)
 
-:warning: The API resquest don't worry in production envolviment, just local envolvement :sorry: 
+### Como executar a aplicação em ambiente local
 
-### :iphone: Layout 
+#### 1. Diretamente na máquina
 
-![layout](https://user-images.githubusercontent.com/46378210/77700644-5549d880-6f93-11ea-9a8b-0a2b34772c21.png)
+Clone o projeto:
 
-## Resources
-
-- React
-- Antdsign
-- API of [Giphy](https://giphy.com/) 
-
-## How to run application
-
-Clone this project:
-
-```
-git clone https://github.com/reginadiana/api-giffs
+```bash
+$ git clone https://github.com/reginadiana/gifs-giphy
 ```
 
-Install dependeces and run with:
+Instale as dependencias:
 
 ```
-$ cd api-giff
 $ yarn install
+```
+
+Inicie:
+
+```
 $ yarn start
 ```
 
-## Running with docker 
+#### 2. Com docker
 
-Container build
+> Para usar o docker, é necessário que o `docker` e o `docker-compose` esteja instalado na máquina
 
+Construa o container:
 ```
 $ docker-compose build
 ```
 
-Running application
-```
-$ docker-compose up
-```
-
-Open docker terminal
+Abra o terminal:
 ```
 $ docker-compose run --rm --service-ports app bash  
 ```
 
-Is possible to see the response of local request acessing http://localhost:3001
+Inicie: 
 
-If you can and wanted give me some **feedback** about my project or README.md, send me a **Pull Requests**. Advices are many welcome and constructive for me :smile:
+```
+$ yarn start
+```
 
-Give me a **Star** if this project help or inspired you somehow :star:
+A aplicação fica disponível na rota http://localhost:3001
