@@ -14,7 +14,7 @@ O gerenciador é uma aplicação em frontend para pesquisa e renderização de i
 
 ## :iphone: Aplicação 
 
-![image](https://user-images.githubusercontent.com/46378210/173581217-ec5c04bf-4dfa-41ac-8dcb-9f551086d7fa.png)
+<img src="https://user-images.githubusercontent.com/46378210/173581217-ec5c04bf-4dfa-41ac-8dcb-9f551086d7fa.png" width="500"/>
 
 ### Como executar a aplicação em ambiente local
 
